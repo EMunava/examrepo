@@ -1,0 +1,78 @@
+Login 
+
+ User Story
+As a shopper I want to login so I can browser the items available for purchase.
+
+Acceptance Criteria
+Username	
+	Username needs to be a valid email address.
+Password	Password must be at least 6 and at most 12 characters’ long.
+	Password must contain at least 1 upper case letter.
+	Password must contain at least 1 lower case letter.
+	Password must contain an alphanumeric character.
+	Password must contain a special character.
+
+
+Scenario Template
+Scenario 1:	User is authorized
+	
+	Given the user is an authorized user (registered user)
+	When She/he visits the Amazon URL to login
+	And She/he fills in her correct details
+	Then She/he is presented with the browsing page.Scenario 2:	User is not authorized
+	
+	Given the user has not registered with the Amazon
+	When She/he visits the Amazon URL to login
+	And She/he fills in her correct details
+	Then She sees an error page stating clearly that she is not registered 
+And She is given a link to the registration page
+	
+
+
+Browsing Products
+
+ User Story
+As a shopper I want to view a list of products so I can select some to purchase
+
+
+Acceptance Criteria
+Password	
+	See a thumbnail image for each product
+	Click to view details for each product
+	Add to cart from the detail page
+	Search for a product by name or category
+	View products by category
+
+
+Scenario Template
+Scenario 1:	See a thumbnail image for each product
+	
+	Given The user is an authorized user
+	When The user has successfully login.
+	And She/he fills in her correct details
+	Then She/he is presented with the browsing site with the thumbnail products.
+Scenario 2:	Click to view details for each product
+	
+	Given The user is on the browsing page
+	When The user has clicks on the thumbnail of a product
+	Then She/he is presented with the details of the product.
+Scenario 3:	Add to cart from the detail page
+	
+	Given The user is an authorized user
+	When The user clicks on the add to cart.
+	And She/he is on the detail page
+	Then She/he is presented with the add to cart page.
+	
+
+Scenario 4:	Search for a product by name or category
+	
+	Given The user is an authorized user
+	When The user searches for product by name or category
+	Then She/he is presented with the search tab.
+Scenario 5:	View products by category
+	
+	Given The user is an authorized user
+	When The user clicks on the view products by category.
+	Then She/he is presented with the page with the products categorized.
+	
+
